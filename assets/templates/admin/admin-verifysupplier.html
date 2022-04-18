@@ -1,0 +1,412 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Organic Fresh Fruits and Vegetables</title>
+    <!-- HTML5 Shim and Respond.js' %} IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js' %} doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="codedthemes" />
+      <!-- Favicon icon -->
+      <link rel="icon" href="{% static 'admin/images/favicon.ico' %}" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="{% static 'admin/pages/waves/css/waves.min.css' %}" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="{% static 'admin/css/bootstrap/css/bootstrap.min.css' %}">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="{% static 'admin/pages/waves/css/waves.min.css' %}" type="text/css" media="all">
+      <!-- themify icon -->
+      <link rel="stylesheet" type="text/css" href="{% static 'admin/icon/themify-icons/themify-icons.css' %}">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="{% static 'admin/icon/font-awesome/css/font-awesome.min.css' %}">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'admin/css/jquery.mCustomScrollbar.css' %}">
+        <!-- am chart export.css -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'admin/css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'admin/css/viewpayment.css' %}">
+
+  </head>
+
+  <body>
+  <!-- Pre-loader start -->
+  <div class="theme-loader">
+      <div class="loader-track">
+          <div class="preloader-wrapper">
+              <div class="spinner-layer spinner-blue">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+              <div class="spinner-layer spinner-red">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-yellow">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-green">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Pre-loader end -->
+  <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+          <nav class="navbar header-navbar pcoded-header">
+              <div class="navbar-wrapper">
+                  <div class="navbar-logo">
+                      <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                          <i class="ti-menu"></i>
+                      </a>
+                      <div class="mobile-search waves-effect waves-light">
+                          <div class="header-search">
+                              <div class="main-search morphsearch-search">
+                                  <div class="input-group">
+                                      <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                      <input type="text" class="form-control" placeholder="Enter Keyword">
+                                      <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    
+                      <a class="mobile-options waves-effect waves-light">
+                          <i class="ti-more"></i>
+                      </a>
+                  </div>
+                
+                  <div class="navbar-container container-fluid">
+                      <ul class="nav-left">
+                          <li>
+                              <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                          </li>
+                          <li class="header-search">
+                              <div class="main-search morphsearch-search">
+                                  <div class="input-group">
+                                      <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                      <input type="text" class="form-control">
+                                      <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                  <i class="ti-fullscreen"></i>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav-right">
+                          
+                          <li class="user-profile header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <img src="{% static 'admin/images/avatar-4.jpg' %}" class="img-radius" alt="User-Profile-Image">
+                                  <span>Bhagyashree</span>
+                                  <i class="ti-angle-down"></i>
+                              </a>
+                              <ul class="show-notification profile-notification">
+                                 
+                               
+                              
+                                  <li class="waves-effect waves-light">
+                                      <a href="{% url 'admin-login' %}">
+                                          <i class="ti-layout-sidebar-left"></i> Logout
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <div class="pcoded-main-container">
+              <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar">
+                      <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                      <div class="pcoded-inner-navbar main-menu">
+                          <div class="">
+                              <div class="main-menu-header">
+                                  <img class="img-80 img-radius" src="{% static 'admin/images/avatar-4.jpg' %}" alt="User-Profile-Image">
+                                  <div class="user-details">
+                                      <span id="more-details">Bhagyashree<i class="fa fa-caret-down"></i></span>
+                                  </div>
+                              </div>
+        
+                              <div class="main-menu-content">
+                                  <ul>
+                                      <li class="more-details">
+                                          <a href="{% url 'admin-login' %}"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="p-15 p-b-0">
+                              <form class="form-material">
+                                  <div class="form-group form-primary">
+                                      <input type="text" name="footer-email" class="form-control" required="">
+                                      <span class="form-bar"></span>
+                                  </div>
+                              </form>
+                          </div>
+                          <ul class="pcoded-item pcoded-left-item">
+                              <li>
+                                  <a href="{% url 'admin-home' %}" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                <a href="{% url 'admin-viewenquiry' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">View Enquiry</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                             
+                          </ul>
+                          <ul class="pcoded-item pcoded-left-item">
+                              <li>
+                                  <a href="{% url 'admin-addproducts' %}" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.form-components.main">Add Products</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+        
+                          </ul>
+                          <ul class="pcoded-item pcoded-left-item">
+                            <li>
+                                <a href="{% url 'admin-viewsupplier' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View
+                                        Suppliers</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li  class="active">
+                                <a href="{% url 'admin-verifysupplier' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Verify Suppliers</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'admin-viewconsumer' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View Consumers</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'admin-viewalladdedproducts' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View All Product Details</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                         
+                            <li>
+                                <a href="{% url 'admin-vieworders' %}"class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View Orders</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'admin-viewpayments' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View Payments</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'admin-viewfeedback' %}" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">View Feedback</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                  </nav>
+                  <div class="pcoded-content">
+                      <!-- Page-header start -->
+                      <div class="page-header">
+                          <div class="page-block">
+                              <div class="row align-items-center">
+                                  <div class="col-md-8">
+                                      <div class="page-header-title">
+                                          <h5 class="m-b-10">Supplier Details</h5>
+                                          <p class="m-b-0">Organic Fresh Fruits and Vegetables</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <ul class="breadcrumb-title">
+                                          <li class="breadcrumb-item">
+                                              <a href="{% url 'admin-home' %}"> <i class="fa fa-home"></i> </a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="{% url 'admin-verifysupplier' %}">VERIFY SUPPLIERS</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <br>
+                      <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="header-title pb-3 mt-0">View Suppliers</h5>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover mb-0">
+                                                    <thead>
+                                                        <tr class="align-self-center">
+                                                            <th>supplierverify_id</th>
+                                                            <th>distributor_name</th>
+                                                            <th>isimark</th>
+                                                            <th>email</th>
+                                                            <th>phone_number</th>
+                                                            <th>Status</th>
+                                                            <th>Manage</th>
+                                                        </tr>
+                                                    </thead>
+                                                     {% for verify in SupplierVerifyModel %}
+                                                    <tbody>
+                                                        <tr>
+                                                           <td>{{ verify.supplierverify_id }}</td>
+                                                            <td>{{ verify.distributor_name }}</td>
+                                                            <td>{{ verify.isimark }}</td>                                                            
+                                                            <td>{{ verify.email }}</td>
+                                                            <td>{{ verify.phonenumber }}</td>
+                                                            {% if verify.status == "Accepted" %}
+                                                            <td>
+                                                                <span class="btn btn-success">{{ verify.status }}</span>
+
+                                                            </td>
+                                                            {% elif verify.status == "Rejected" %}
+                                                            <td>
+                                                                <span class="btn btn-danger">{{ verify.status }}</span>
+
+                                                            </td>
+                                                            {% else %}
+                                                            <td>
+                                                                <span class="btn btn-info">{{ verify.status }}</span>
+
+                                                            </td>
+                                                            {% endif %}
+                                                            <td>
+                                                                <a href="accept_verify_supplier/{{ verify.supplierverify_id }}" type="submit" class="btn btn-success">Accept</a>
+                                                                <a href="reject_verify_supplier/{{ verify.supplierverify_id }}" type="submit"  class="btn btn-danger">Reject</a>
+                                                            </td>
+
+
+                                                        </tr>
+                                                          
+                                                    </tbody>
+                                                    {% endfor %}
+                                                </table>
+                                            </div>
+                                            <!--end table-responsive-->
+                                            <div class="pt-3 border-top text-right"><a href="#" class="text-primary">View all <i class="mdi mdi-arrow-right"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                      <br>
+                      <!-- Page-header end -->
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="{% static 'admin/js/jquery/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/js/jquery-ui/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/js/popper.js' %}/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/js/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/pages/widget/excanvas.js' %}"></script>
+    <!-- waves js -->
+    <script src="{% static 'admin/pages/waves/js/waves.min.js' %}"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="{% static 'admin/js/jquery-slimscroll/jquery.slimscroll.js' %}"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="{% static 'admin/js/modernizr/modernizr.js' %}"></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="{% static 'admin/js/SmoothScroll.js' %}"></script>
+    <script src="{% static 'admin/js/jquery.mCustomScrollbar.concat.min.js' %} "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="{% static 'admin/js/chart.js' %}/Chart.js' %}"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="{% static 'admin/pages/widget/amchart/gauge.js' %}"></script>
+    <script src="{% static 'admin/pages/widget/amchart/serial.js' %}"></script>
+    <script src="{% static 'admin/pages/widget/amchart/light.js' %}"></script>
+    <script src="{% static 'admin/pages/widget/amchart/pie.min.js' %}"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="{% static 'admin/js/pcoded.min.js' %}"></script>
+    <script src="{% static 'admin/js/vertical-layout.min.js' %} "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="{% static 'admin/pages/dashboard/custom-dashboard.js' %}"></script>
+    <script type="text/javascript" src="{% static 'admin/js/script.js' %} "></script>
+</body>
+
+</html>
